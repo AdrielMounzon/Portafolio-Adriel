@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portafolio</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .center-vertical {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+    /* Estilos para el tema oscuro */
+    body.dark-mode {
+      background-color: #333;
+      color: #fff;
+    }
+    body.dark-mode .navbar-dark .navbar-brand {
+      color: #fff;
+    }
+    body.dark-mode .navbar-dark .navbar-nav .nav-link {
+      color: #fff;
+    }
+    body.dark-mode .navbar-dark .navbar-toggler-icon {
+      background-color: #fff;
+    }
+    /* Estilos para el footer */
+    footer {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+      width: 100%;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Mi Portafolio</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#acerca">Acerca de mí</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#habilidades">Resumen de habilidades</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#portafolio">Portafolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#servicios">Servicios</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contacto">Contacto</a>
+      </li>
+    </ul>
+    <!-- Botón para cambiar el tema del sitio -->
+    <button class="btn btn-light" id="theme-toggle">Cambiar Tema</button>
+  </div>
+</nav>
+
+<section id="acerca" class="container mt-5">
+  <h2 class="text-center mb-4">Acerca de mí</h2>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="center-vertical">
+        <div>
+          <h3>Adriel Mounzón</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="center-vertical">
+        <img src="Adriel.jpg" class="img-fluid" alt="Foto de Adriel Mounzón" style="max-width: 100%; max-height: 100%;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="habilidades" class="container mt-5">
+  <h2 class="text-center mb-4">Habilidades</h2>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="center-vertical">
+        <img src="habilidad1.png" class="img-fluid" alt="Habilidad 1" style="max-width: 150px;">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <h3>CSS</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.</p>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-md-6">
+      <div class="center-vertical">
+        <img src="habilidad2.png" class="img-fluid" alt="Habilidad 2" style="max-width: 150px;">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <h3>HTML</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.</p>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-md-6">
+      <div class="center-vertical">
+        <img src="habilidad3.png" class="img-fluid" alt="Habilidad 3" style="max-width: 150px;">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <h3>JavaScript</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.</p>
+    </div>
+  </div>
+</section>
+
+<section id="portafolio" class="container mt-5">
+  <h2 class="text-center mb-4">Portafolio</h2>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="portafolio1.jpg" class="card-img-top" alt="Proyecto 1">
+        <div class="card-body">
+          <h5 class="card-title">Proyecto 1</h5>
+          <p class="card-text">Descripción del Proyecto 1.</p>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#proyecto1Modal">Ver</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="portafolio2.jpg" class="card-img-top" alt="Proyecto 2">
+        <div class="card-body">
+          <h5 class="card-title">Proyecto 2</h5>
+          <p class="card-text">Descripción del Proyecto 2.</p>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#proyecto2Modal">Ver</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="portafolio3.jpg" class="card-img-top" alt="Proyecto 3">
+        <div class="card-body">
+          <h5 class="card-title">Proyecto 3</h5>
+          <p class="card-text">Descripción del Proyecto 3.</p>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#proyecto3Modal">Ver</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="servicios" class="container mt-5">
+  <h2 class="text-center mb-4">Servicios</h2>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="servicio1.jpg" class="card-img-top" alt="Servicio 1">
+        <div class="card-body">
+          <h5 class="card-title">Servicio 1</h5>
+          <p class="card-text">Descripción del Servicio 1.</p>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#servicio1Modal">Ver</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="servicio2.jpg" class="card-img-top" alt="Servicio 2">
+        <div class="card-body">
+          <h5 class="card-title">Servicio 2</h5>
+          <p class="card-text">Descripción del Servicio 2.</p>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#servicio2Modal">Ver</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="servicio3.jpg" class="card-img-top" alt="Servicio 3">
+        <div class="card-body">
+          <h5 class="card-title">Servicio 3</h5>
+          <p class="card-text">Descripción del Servicio 3.</p>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#servicio3Modal">Ver</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contacto" class="container mt-5">
+  <h2 class="text-center mb-4">Contacto</h2>
+  <div class="row">
+    <div class="col-md-6 mx-auto">
+      <form>
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+        </div>
+        <div class="form-group">
+          <label for="email">Correo Electrónico</label>
+          <input type="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico">
+        </div>
+        <div class="form-group">
+          <label for="mensaje">Mensaje</label>
+          <textarea class="form-control" id="mensaje" rows="5" placeholder="Escriba su mensaje"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-dark text-white text-center py-3 mt-5">
+  <p>&copy; 2024 Adriel Mounzón - Todos los derechos reservados</p>
+</footer>
+
+<!-- Modals para cada proyecto -->
+<div class="modal fade" id="proyecto1Modal" tabindex="-1" role="dialog" aria-labelledby="proyecto1ModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="proyecto1ModalLabel">Proyecto 1</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Contenido del Proyecto 1.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="proyecto2Modal" tabindex="-1" role="dialog" aria-labelledby="proyecto2ModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="proyecto2ModalLabel">Proyecto 2</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Contenido del Proyecto 2.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="proyecto3Modal" tabindex="-1" role="dialog" aria-labelledby="proyecto3ModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="proyecto3ModalLabel">Proyecto 3</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Contenido del Proyecto 3.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modals para cada servicio -->
+<div class="modal fade" id="servicio1Modal" tabindex="-1" role="dialog" aria-labelledby="servicio1ModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="servicio1ModalLabel">Servicio 1</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Contenido del Servicio 1.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="servicio2Modal" tabindex="-1" role="dialog" aria-labelledby="servicio2ModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="servicio2ModalLabel">Servicio 2</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Contenido del Servicio 2.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="servicio3Modal" tabindex="-1" role="dialog" aria-labelledby="servicio3ModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="servicio3ModalLabel">Servicio 3</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Contenido del Servicio 3.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+  // Función para cambiar entre temas claro y oscuro
+  $(document).ready(function(){
+    $("#theme-toggle").click(function(){
+      $("body").toggleClass("dark-mode");
+    });
+  });
+</script>
+
+</body>
+</html>
